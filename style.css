@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px;
+}
+.flag{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #006a4e;
+    display: flex;
+    flex-direction: row;
+}
+.stripes{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.stripe{
+    flex: 1;
+    width: 100%;
+}
+.stripe:nth-child(odd){
+    background-color: #006a4e;
+}
+.stripe:nth-child(even){
+    background-color: #ffce00;
+}
+.red-square{
+    width: 40%;
+    height: 60%;
+    background-color: #d21034;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.star{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
